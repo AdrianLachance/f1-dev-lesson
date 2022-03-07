@@ -1,0 +1,38 @@
+.card{
+    background-color: rgba(white,.2);
+    width: 100%;
+    transition: all .3s ease;
+    cursor: pointer;
+    &__title{
+        display: flex;
+        align-items: center;
+        font-size: 50px;
+        font-weight: bold;
+        background: linear-gradient(90deg, #6F6F6F 0%, rgba(255, 255, 255, 0) 100.63%);
+        padding: 10px;
+        text-transform: uppercase;
+    }
+    &__car-n-points{
+        display: flex;
+        color: #FFCC00;
+        align-items: center;
+        padding: 10px;
+        justify-content: space-around;
+        img{
+            width: 50%;
+        }
+        .number{
+            font-size: 130px;
+            font-weight: bold;
+        }
+        .pts{
+            font-size: 60px;
+        }
+    }
+    &:not(:first-child){
+        margin: 55px 0 0 0;
+    }
+    &:hover{
+        transform: scale(1.04);
+    }
+}
